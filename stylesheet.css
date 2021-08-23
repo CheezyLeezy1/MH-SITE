@@ -109,10 +109,11 @@ nav a {
 nav a:hover {
   color: #ea1c2c;
 }
+
 #aboutSection {
   background-color: white;
   font-weight: 100;
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   line-height: 2;
   padding: 0;
 }
@@ -134,7 +135,8 @@ nav a:hover {
   grid-area: header;
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
+  font-size: 20px;
+  color:#ea1c2c;
 }
 
 .about-image {
@@ -147,7 +149,6 @@ nav a:hover {
   grid-area: content;
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
 }
 
 .landing {
@@ -185,3 +186,47 @@ nav a:hover {
   font-weight: 100;
   font-size: 4rem;
 }
+
+.gallery-container{
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f89cd5;
+  overflow: auto;
+  text-align: center;
+  font-weight: 100;
+}
+
+.gallery-header h1{
+  margin-top: 50px;
+  padding: 100px;
+  grid-area: header;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color:#ea1c2c;
+}
+
+.gallery-header p{
+  text-align: center;
+  font-weight: 100;
+  font-size:30px;
+  color:white;
+  margin:10px;
+  padding:10px;
+}
+
+.gallery{
+  margin:5px;
+  border:3 px solid #ccc;
+  float:left;
+  width:390px;
+}
+
+.gallery img{
+  width:100%;
+  height:auto;
+
+}
+
+
+

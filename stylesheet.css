@@ -215,18 +215,75 @@ nav a:hover {
   padding:10px;
 }
 
-.gallery{
-  margin:5px;
-  border:3 px solid #ccc;
-  float:left;
-  width:390px;
-}
-
 .gallery img{
-  width:100%;
-  height:auto;
+  margin: auto;
+  padding: 5px ;
+  text-align: center;
+}
 
+.form-container{
+  background-color: white;
+}
+
+.form-container h1{
+  margin-top: 50px;
+  padding: 100px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color:#ea1c2c;
 }
 
 
+.form-container input, textarea{
+  width:80%;
+  padding: 10px;
+  margin:1px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #d4d4d4;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.form-container input{
+  height:50px;
+  padding:5px;
+}
+
+.form-container placeholder{
+  vertical-align: text-top;
+}
+
+.usrForm form{
+  padding:20px;
+  text-align: center;
+  resize: vertical;
+}
+
+ .usrForm textarea {
+  width: 80%;
+  height: 200px;
+}
+
+.footer{
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer a{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.footer span{
+  color:#ea1c2c;
+  font-size: 1.25rem;
+}
+
+.usrForm button{
+  padding:5px;
+}

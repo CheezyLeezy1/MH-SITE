@@ -12,18 +12,13 @@ function validate(){
     let TA=document.forms["myForm"]["textarea"].value;
 
     if (name.value == "") {
-      alert("Please enter your name.");
+      alert("Please enter a correct name.");
       username.focus();
       return false;
     }
 
-    if (name.value == "") {
-      alert("Please enter your name.");
-      username.focus();
-      return false;
-    }
     if (name.value.match == "0-9") {
-      alert("please enter your name");
+      alert("please enter a correct name");
       name.focus();
       return false;
     }
@@ -38,12 +33,12 @@ function validate(){
       return false;
     }
     if (phone.value == "") {
-      alert("Please enter your telephone number.");
+      alert("Please enter a valid number.");
       phone.focus();
       return false;
     }
     if(phone.value.match==="/^\d{10}$/)") {
-    alert("Please enter your telephone number.");
+    alert("Please enter a valid number.");
     phone.focus();
     return false;
     }

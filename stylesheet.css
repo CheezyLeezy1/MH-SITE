@@ -361,18 +361,10 @@ nav a:hover {
 .form-container {
     width: 100%;
   } 
-  *.form-container{
-    margin: 0;
-    padding:0;
-  }
   
   .about-container{
     width:100%;
     
-  }
-  *.about-container{
-    margin: 0;
-    padding:0;
   }
 }
 

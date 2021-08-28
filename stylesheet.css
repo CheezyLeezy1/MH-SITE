@@ -365,5 +365,14 @@ nav a:hover {
   }
 }
 
+@media only screen and (max-width: 1025px) {
+.form-container {
+    width: 100%;
+  } 
+  #about-section{
+    width:100%;
+  }
+}
+
 
 

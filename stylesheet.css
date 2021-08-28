@@ -95,14 +95,6 @@ nav a:hover {
   color: #ea1c2c;
 }
 
-#aboutSection {
-  background-color: white;
-  font-weight: 100;
-  font-size: 1.125rem;
-  line-height: 2;
-  padding: 0;
-}
-
 .landing {
   display: grid;
   grid-template-areas:
@@ -149,9 +141,12 @@ nav a:hover {
     "image content"
     "image content"
     "image content";
-    
   grid-gap: 10px;
   background-color: white;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+  padding: 0;
 }
 
 .heading {
@@ -298,6 +293,9 @@ nav a:hover {
     display: inline-block;
   }
 
+  .logo{
+    grid-column: 1;
+  }
   .left-menu {
     display: none;
   }
@@ -368,9 +366,13 @@ nav a:hover {
 @media only screen and (max-width: 1025px) {
 .form-container {
     width: 100%;
+    margin: 0;
+    padding:0;
   } 
-  #about-section{
+  .about-container{
     width:100%;
+    margin: 0;
+    padding:0;
   }
 }
 

@@ -2,26 +2,14 @@
 
 
 
-* {
-    box-sizing: border-box;
-}
-html, body, div, img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-body {
-    line-height: 1;
-}
+
 
 body {
   font-family: "Nunito", sans-serif;
   padding-top: 60px;
   margin: 0;
   padding: 0;
+  background-color: #f89cd5;
 }
 
 .nav-container {

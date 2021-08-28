@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 
-.about-container {
+.about {
   display: grid;
   grid-template-areas:
     "image header"
@@ -360,11 +360,13 @@ nav a:hover {
 @media only screen and (max-width: 1025px) {
 .form-container {
     width: 100%;
+    margin: 0;
+    padding:0;
   } 
-  
-  .about-container{
+  .about{
     width:100%;
-    
+    margin: 0;
+    padding:0;
   }
 }
 

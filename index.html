@@ -30,7 +30,7 @@
 <body> 
 
 
-
+<!-- nav start - navigation bar -->
   <div class="nav-container">
     <nav>
       <input type="checkbox" id="nav-toggle">
@@ -51,6 +51,8 @@
     </nav>
   </div>
 
+
+  <!-- landing area - first sight of the page first thing you see-->
   <section id="landing-area"> 
     <div class="landing">
       <div class="landingHeader">
@@ -70,7 +72,7 @@
   </section>
 
 
-
+<!-- simple about section -->
     <div class="about">
       
       <div class="heading">
@@ -88,6 +90,8 @@
     
     </div>
 
+
+    <!-- Gallery Start A row containing columns using flexbox to assign places -->
   <div class="gallery-container">
     <div class="gallery-header">
       <h1> GALLERY </h1>
@@ -141,25 +145,66 @@
           <p> Click <a href="https://spunout.ie/" >here</a> to access the site</p>
           </div>
       </div>
-
   </div>
-
   </div>
-    
-  
+   
 
-    <div class="form-container">
-      <div class="usrForm">
-        <h1> Contact Form </h1>
-        <form name="myForm">
-          <input type="text" name="Name" placeholder="NAME"></input> <br>
-          <input type="text" name="E-mail" placeholder="EMAIL"> </input><br>
-          <input type="number" name="Phone" placeholder="NUMBER"> </input><br>
-          <textarea id="textarea" placeholder="MESSAGE"></textarea> <br>
-          <button type="button" onclick="validate(); reset();">SUBMIT
-          </button>
-      </form>
+  <!-- form start - should bounce in from left-->
+  <div class="form-container"> 
+  <div class="container">
+    <h1 class="brand"><span> CONTACT </span></h1>
+    <!-- keeps pink aspect to side -->
+		<div class="wrapper">
       
+			<div class="contact-info">
+        
+				<h3> <span>Mental Health</span> Contact Form</h3>
+        <br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<ul>
+          <li>Fill in Your Form</li>
+          <li>To Get Started </li>
+          <li>We Will Contact You Soon!</li>
+        </ul>
+      </div>
+
+
+      <!-- Contact Form - javascript will be implemented on click-->
+      <div class="contact">
+        <h3>Get in Touch!</h3>
+        <form id="myForm" class="form" >
+          <p>
+            <label>Name</label>
+            <input id="name" type="text" name="name">
+          </p>
+          <p>
+            <label>StudentNumber</label>
+            <input id="studNum" type="text" name="studentNum">
+          </p>
+          <p>
+            <label>EmailAddress</label>
+            <input id="e-mail"type="email" name="email">
+          </p>
+          <p>
+            <label>PhoneNumber</label>
+            <input id="number" type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" onclick="checkInputs()">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  
       <div class="footer">
         <p> Made by <a href="https://www.linkedin.com/in/mrleecampbell"> <span> Lee Campbell&copy;</span></p></a>
       </div>

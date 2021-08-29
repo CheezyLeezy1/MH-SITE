@@ -3,57 +3,57 @@ function showhide(div_id) {
   div.classList.toggle('hidden'); 
    }
 
-
-
-function validate(){
-    let name = document.forms["myForm"]["Name"];
-    let email = document.forms["myForm"]["E-mail"];
-    let phone = document.forms["myForm"]["Phone"];
-    let TA=document.forms["myForm"]["textarea"].value;
-
-    if (name.value == "") {
-      alert("Please enter a correct name.");
-      username.focus();
-      return false;
-    }
-
-    if (name.value.match == "0-9") {
-      alert("please enter a correct name");
-      name.focus();
-      return false;
-    }
-    if (email.value.indexOf("@", 0) < 0) {
-      alert("Please enter a valid e-mail address.");
-      email.focus();
-      return false;
-    }
-    if (email.value.indexOf(".", 0) < 0) {
-      alert("Please enter a valid e-mail address.");
-      email.focus();
-      return false;
-    }
-    if (phone.value == "") {
-      alert("Please enter a valid number.");
-      phone.focus();
-      return false;
-    }
-    if(phone.value.match==="/^\d{10}$/)") {
-    alert("Please enter a valid number.");
-    phone.focus();
-    return false;
-    }
-    
-    if(TA.value==""){
-      alert("text area cannot be blank")
-      TA.focus();
-    return false;
-      }
+   const form=document.getElementById("myForm")
+   const usersname=document.getElementById("name")
+   const studentNum=document.getElementById("studNum")
+   const email=document.getElementById("e-mail")
+   const phone=document.getElementById("number")
   
-      
-}
+   
+   
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+     
+      checkInputs()
+    });
 
-function reset(){
-  document.getElementById("myForm").reset();
-  alert("your form has been submitted");
-}
+
+    function checkInputs(){
+     if(usersname.value.trim()==="" || usersname.value.trim()==null){
+       alert("Name is Required - Please Try Again")
+     }
+
+     if(usersname.length<=2){
+       alert("Too Short")
+     }
+
+     if(studentNum.value.trim()===""){
+      alert("StudentNumber invalid")
+     }
+
+     if(studentNum.length!==9){
+      alert("StudentNumber too short.")
+     }
+
+     if(email.value.trim()===""){
+       alert("email cannot be empty")
+     } else{
+       if(isEmailValid(email.value.trim())){
+         alert("email is not valid")
+       }
+     }
+
+     if(!/^[0-9]+$/.test(number)){
+       alert("invalid number input")
+     }
+
+   }
+  
+
+   function isEmailValid(email){
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.text(email);
+   }
+
+  
+
 

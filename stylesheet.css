@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f89cd5;
-  width: 100%;
+
 }
 
 
@@ -135,7 +135,6 @@ nav a:hover {
   font-family: "Nunito" sans-serif;
   font-weight: 100;
   font-size: 1.4em;
-  width: 100%;
 }
 
 .heading {
@@ -413,7 +412,6 @@ ul{
     "image"
     "header"
     "content";
-    width: 100%;
   }
 }
 
@@ -439,6 +437,9 @@ ul{
     width:100%;
     margin: auto;
     padding: auto;
+  }
+  .contact *{
+    width:90%;
   }
 }
 @media(min-width:700px){
